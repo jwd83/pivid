@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source "${BASH_SOURCE%/*}/../config"
+livestreamer --twitch-oauth-token $APIKEY twitch.tv/$1 $2 -np 'omxplayer'
+
